@@ -1,0 +1,46 @@
+
+
+<div ng-controller="login-Controller">
+    <div class="panel top-bar col-xs-12">
+        <center><h1 style="font-size:36px;">Login</h1></center>
+    </div>
+    <div class="col-xs-12 panel" style="text-align:center;">
+        <form action="http://retropugv3/php/login.php" method="post" class="form-signin" style="border-color:black;">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <input type="text" class="input-block-level" placeholder="Email address" name="username">
+            <input type="password" class="input-block-level" placeholder="Password" name="password">
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me">
+                Remember me
+            </label>
+            <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+            <a class="btn btn-group btn-primary" href="#!/guest/register">Register</a>
+        </form>
+    </div>
+</div>
+
+<?php  
+	include ("C:/wamp64/www/Retropugv3/php/connect_database.php"); 
+?>
+<?php
+	include ("C:/wamp64/www/Retropugv3/php/register.php");
+?>
+
+<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/popover.js"></script>
+    <script src="js/scrollspy.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular-route.js"></script>
+    <script src="./js/app.js"></script>
